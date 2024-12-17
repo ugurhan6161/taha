@@ -19,7 +19,7 @@
         position: absolute;
         width: 80px;
         height: 120px;
-        background-image: url('/ezgif.com-rotate.gif'); /* Update player image */
+        background-image: url('https://i.ibb.co/CHyhRLt/ezgif-com-rotate.gif'); /* Update player image */
         background-size: contain;
         background-repeat: no-repeat;
         bottom: 50px;
@@ -35,7 +35,7 @@
         position: absolute;
         width: 30px;
         height: 30px;
-        background-image: url('/Adsız tasarım (1).gif');
+        background-image: url('https://i.ibb.co/S3X8Lcs/Ads-z-tasar-m-1.gif');
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
@@ -46,26 +46,25 @@
         position: absolute;
         width: 40px;
         height: 40px;
-        background-image: url('/Adsız tasarım.gif'); 
+        background-image: url('https://i.ibb.co/02XwHVL/Ads-z-tasar-m.gif'); 
         background-size: contain; 
         background-repeat: no-repeat; 
         background-position: center; 
         border-radius: 5px;
         animation: float 2s infinite alternate;
-        transform: rotate(-90deg); /* Change rotation for enemies */
     }
 
     .enemy-flying {
         position: absolute;
         width: 40px;
         height: 40px;
-        background-image: url('/Adsız tasarım.gif'); 
+        background-image: url('https://i.ibb.co/02XwHVL/Ads-z-tasar-m.gif'); 
         background-size: contain; 
         background-repeat: no-repeat; 
         background-position: center; 
         border-radius: 5px;
         animation: flyingEnemy 4s infinite;
-        transform: rotate(-90deg);
+
     }
 
     @keyframes flyingEnemy {
@@ -79,7 +78,7 @@
         position: absolute;
         width: 100px;  /* Increased from 60px */
         height: 100px; /* Increased from 60px */
-        background-image: url('/Adsız tasarım (2).png'); 
+        background-image: url('https://i.ibb.co/brNWkfx/Ads-z-tasar-m-2.png'); 
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
@@ -434,7 +433,7 @@
         left: 0;
         width: 100%;
         height: 100vh;
-        background: url('/ezgif.com-cut.gif') center center no-repeat;
+        background: url('https://i.ibb.co/vVMPBJQ/ezgif-com-cut.gif') center center no-repeat;
         background-size: 50% auto; /* Changed from 'cover' to '50% auto' to make the image smaller */
         background-color: rgba(0,0,0,0.8);
         z-index: 3000;
@@ -497,7 +496,7 @@
     <div id="startMenu" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; 
         background: rgba(0,0,0,0.8); display: flex; flex-direction: column; 
         justify-content: flex-end; align-items: center; z-index: 1000;
-        background-image: url('/Adsız tasarım.png');
+        background-image: url('https://i.ibb.co/CW0H8MX/Ads-z-tasar-m.png');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;">
@@ -704,8 +703,8 @@ const downBtn = document.getElementById('downBtn');
 const fireBtn = document.querySelector('.fire-btn');
 
 let autoMovingRight = true; // New variable to control auto movement
-let playerImageDefault = '/ezgif.com-rotate.gif'; // Updated player image
-let playerImageJumping = '/ezgif.com-rotate.gif'; // Updated player image
+let playerImageDefault = 'https://i.ibb.co/CHyhRLt/ezgif-com-rotate.gif'; // Updated player image
+let playerImageJumping = 'https://i.ibb.co/CHyhRLt/ezgif-com-rotate.gif'; // Updated player image
 
 let playerX = window.innerWidth * 0.2; // Change from window.innerWidth / 2 to window.innerWidth * 0.2
 let playerY = 50;
@@ -738,11 +737,19 @@ function createGround() {
 function updateLevelBackground() {
     const gameDiv = document.getElementById('game');
     if(currentLevel <= 2) {
-        gameDiv.style.backgroundImage = "url('/Adsız tasarım (9).png')";
+        gameDiv.style.backgroundImage = "url('https://i.ibb.co/6ZykfVj/Ads-z-tasar-m-9.png')";
     } else if(currentLevel <= 4) {
-        gameDiv.style.backgroundImage = "url('/Adsız tasarım (8).png')";
+        gameDiv.style.backgroundImage = "url('https://i.ibb.co/GkxpqV8/Ads-z-tasar-m-8.png')";
     } else if(currentLevel <= 6) {
-        gameDiv.style.backgroundImage = "url('/Adsız tasarım (7).png')";
+        gameDiv.style.backgroundImage = "url('https://i.ibb.co/thJBZ4p/Ads-z-tasar-m-7.png')";
+        } else if(currentLevel <= 7) {
+        gameDiv.style.backgroundImage = "url('https://i.ibb.co/thJBZ4p/Ads-z-tasar-m-8.png')";
+        } else if(currentLevel <= 8) {
+        gameDiv.style.backgroundImage = "url('https://i.ibb.co/thJBZ4p/Ads-z-tasar-m-9.png')";
+        } else if(currentLevel <= 9) {
+        gameDiv.style.backgroundImage = "url('https://i.ibb.co/thJBZ4p/Ads-z-tasar-m-7.png')";
+        } else if(currentLevel <= 10) {
+        gameDiv.style.backgroundImage = "url('https://i.ibb.co/thJBZ4p/Ads-z-tasar-m-8.png')";
     } else {
         gameDiv.style.background = "linear-gradient(to bottom, #87CEEB, #4682B4)";
     }
@@ -1404,7 +1411,7 @@ function loseLife() {
     // Check if game over
     if (lives <= 0) {
         gameStarted = false;
-        player.style.backgroundImage = "url('/ezgif.com-cut (1).gif')";
+        player.style.backgroundImage = "url('https://i.ibb.co/jrdXJ4n/ezgif-com-cut-1.gif')";
         player.style.transition = "all 2s ease-in";
         
         // Make player fall and fade away
