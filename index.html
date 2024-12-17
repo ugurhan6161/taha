@@ -68,10 +68,10 @@
     }
 
     @keyframes flyingEnemy {
-        0% { transform: translate(0, 0) rotate(-90deg); }
-        25% { transform: translate(0, 30px) rotate(-90deg); }
-        75% { transform: translate(0, -30px) rotate(-90deg); }
-        100% { transform: translate(0, 0) rotate(-90deg); }
+        0% { transform: translate(0, 0) rotate(0deg); }
+        25% { transform: translate(0, 30px) rotate(0deg); }
+        75% { transform: translate(0, -30px) rotate(0deg); }
+        100% { transform: translate(0, 0) rotate(0deg); }
     }
 
     .obstacle {
@@ -1098,7 +1098,7 @@ function createObstacle() {
     obstacle.className = 'obstacle';
     const x = window.innerWidth + Math.random() * 200;
     // Randomly position obstacles at different heights
-    const y = Math.random() < 0.5 ? 50 : 150; // Will create obstacles at two different heights
+    const y = Math.random() < 0.5 ? 50 : 50; // Will create obstacles at two different heights
     obstacle.style.left = x + 'px';
     obstacle.style.bottom = y + 'px';
     game.appendChild(obstacle);
@@ -1111,7 +1111,7 @@ function shootLaser() {
     
     // Position laser at player's eyes
     const playerRect = player.getBoundingClientRect();
-    const eyeLevel = playerRect.top + playerRect.height * 0.3; // Position at ~30% of player height
+    const eyeLevel = playerRect.right + playerRect.height * 0.3; // Position at ~30% of player height
     
     // Find closest enemy
     let closestEnemy = null;
