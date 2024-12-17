@@ -1111,7 +1111,7 @@ function shootLaser() {
     
     // Position laser at player's eyes
     const playerRect = player.getBoundingClientRect();
-    const eyeLevel = playerRect.right + playerRect.height * 0.3; // Position at ~30% of player height
+    const eyeLevel = playerRect.left + playerRect.height * 0.3; // Position at ~30% of player height
     
     // Find closest enemy
     let closestEnemy = null;
