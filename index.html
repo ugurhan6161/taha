@@ -18,11 +18,11 @@
     #player {
         position: absolute;
         width: 90px;
-        height: 60px;
+        height: 90px;
         background-image: url('https://i.ibb.co/CHyhRLt/ezgif-com-rotate.gif'); /* Update player image */
         background-size: contain;
         background-repeat: no-repeat;
-        bottom: 60px;
+        bottom: 50px;
         left: 20%;
         transform: translateX(-50%) rotate(90deg);
         transform-origin: center center;
@@ -1111,7 +1111,7 @@ function shootLaser() {
     
     // Position laser at player's eyes
     const playerRect = player.getBoundingClientRect();
-    const eyeLevel = playerRect.right + playerRect.height * 0.3; // Position at ~30% of player height
+    const eyeLevel = playerRect.top + playerRect.height * 0.3; // Position at ~30% of player height
     
     // Find closest enemy
     let closestEnemy = null;
